@@ -1,0 +1,32 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Reporte de Excel</title>
+    </head>
+    <body>
+        <h1>Reporte de Excel</h1>
+        <table border="1">
+            <tr>
+                <th>Curso</th>
+                <th>Descripcion</th>
+                <th>Fecha</th>
+            </tr>
+            <tr>
+                <td>1. Fundamentos de Java</td>
+                <td>Aprenderemos la sintaxis basica de Java</td>
+                <td>25-10</td>
+            </tr>
+            <tr>
+                <td>2. Programacion com Java</td>
+                <td>Pondremos en pratica conceptos de la programacion orientada a objetos</td>
+                <td>25-10</td>
+            </tr>
+        </table>
+    </body>
+</html>

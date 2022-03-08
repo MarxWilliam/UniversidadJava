@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio Formulario</title>
+        <link rel="stylesheet" type="text/css" href="recursos/estilos.css">
+        <script type="text/javascript" src="recursos/funciones.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form name="form1" action="/ManejoFormulariosHTML/Servlet" 
+              method="post" onsubmit=" return validaForma(this);">
+            
+            <input type="hidden" name="oculto" value="valorOculto">
+            
+            <table with="200" id="one-column-emphasis">
+                <caption>Formulario Registro de Datos</caption> 
+                <tr>
+                    <td class="oce-first">
+                        Usuário (*)
+                    </td>
+                    <td>
+                        <input class="default" type="text"
+                               Name="usuario" value="Escribir Usuario"
+                               onfocus="this.selected();"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first"> 
+                        Password (*)
+                    </td>
+                    <td> 
+                        <input class="default" type="password"
+                               name="password" onfocus="this.select();"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Tecnolog&iacute;as de Inter&iacute;s: (*)
+                    </td>
+                    <td>
+                        Java <input type="checkbox" name="tecnologia" value="java">
+                        &nbsp;&nbsp;&nbsp;
+                        .Net <input type="checkbox" name="tecnologia" value="net">
+                        &nbsp;&nbsp;&nbsp;
+                        Php <input type="checkbox" name="tecnologia" value="php">
+                        &nbsp;&nbsp;&nbsp;                                                                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first"> 
+                        G&eacute;nero: (*)
+                    </td>
+                    <td>
+                        Hombre <input type="radio" name="genero" value="H">
+                        &nbsp;&nbsp;&nbsp; <!--genera espacios entre los elementos de manera horizontal-->
+                        Mujer <input type="radio" name="genero" value="M" 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Ocupaci&oacute;n: (*)
+                    </td>
+                    <td>
+                        <select name="ocupacion" class="default">
+                            <option value="">Selecionar</Option> 
+                            <option value="1">Progesor</Option> 
+                            <option value="2">Ingeniero</Option> 
+                            <option value="3">Jubilado</Option> 
+                            <option value="4">Otro</Option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        M&uacute;sica Favorita:
+                    </td>
+                    <td>
+                        <select name="musica" multiple class="default">
+                            <option value="Rock">Rock</Option> 
+                            <option value="Pop">Pop</Option> 
+                            <option value="Salsa">Salsa</Option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Comentarios:
+                    </td>
+                    <td>
+                        <textarea name="comentarios" cols="30" rows="2"
+                                  class="defaut" onfocus="this.select()">
+                            Escribir un texto</textarea>
+                    </td>
+                </tr>
+                <tr style="text-align:center;">
+                    <td>
+                        <input type="reset" value="Limpiar" class="default">
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="default">
+                    </td>
+                    
+                    
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
